@@ -1,0 +1,28 @@
+{
+  "name": "react-feature-flag-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.40",
+    "@reactions/component": "^2.0.2",
+    "apollo-boost": "^0.1.2",
+    "apollo-client": "^2.2.6",
+    "create-react-context": "^0.2.1",
+    "graphql": "^0.13.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
