@@ -1,5 +1,6 @@
-import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+
+import systemFeaturesQuery from 'graphql/queries/systemFeatures.gql';
 
 const Feature = ({
   children,
@@ -31,8 +32,6 @@ const Feature = ({
   return renderWhenEnabled || children || null;
 }
 
-const withSystemFeatures = graphql(gql`query {
-  systemFeatures
-}`);
+const withSystemFeatures = graphql(systemFeaturesQuery);
 
 export default withSystemFeatures(Feature);

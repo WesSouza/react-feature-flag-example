@@ -1,0 +1,4 @@
+type Query {
+  # List of enabled system features
+  systemFeatures: [String!]!
+}
