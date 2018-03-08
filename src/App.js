@@ -20,25 +20,17 @@ const App = () => (
       <Breakpoint.Consumer>
         {(breakpoint) => (
           <div>
-            The current breakpoint is {breakpoint}
+            The current breakpoint is <b>{breakpoint}</b>.
           </div>
         )}
       </Breakpoint.Consumer>
 
-      <h1>Feature Toggle</h1>
-      <Feature
-        feature={SystemFeatures.version2}
-        renderWhenEnabled={
-          <div>
-            Feature version2 is enabled.
-          </div>
-        }
-        renderWhenDisabled={
-          <div>
-            Feature version2 is disabled.
-          </div>
-        }
-      />
+      <Feature feature={SystemFeatures.version2}>
+        <h1>Feature Toggle</h1>
+        <div>
+          Feature <code>version2</code> is <b>enabled</b>.
+        </div>
+      </Feature>
     </section>
   </AllProviders>
 );

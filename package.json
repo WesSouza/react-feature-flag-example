@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.0.0-beta.40",
-    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.40",
     "@reactions/component": "^2.0.2",
     "apollo-boost": "^0.1.2",
     "apollo-client": "^2.2.6",
